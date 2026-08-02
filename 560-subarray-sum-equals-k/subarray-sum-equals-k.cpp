@@ -6,7 +6,8 @@ public:
         int prefix=0, count=0;
         for(int i=0;i<nums.size();i++){
             prefix += nums[i];
-            count += mp[prefix-k];
+            if(mp.count(prefix-k)){
+            count += mp[prefix-k];}
             mp[prefix]++;
         }
         return count;
