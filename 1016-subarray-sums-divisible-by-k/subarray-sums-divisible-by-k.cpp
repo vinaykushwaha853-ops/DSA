@@ -11,7 +11,9 @@ public:
             if(rem<0){
                 rem+=k;
             }
+            if(mp.count(rem)){
             count+=mp[rem];
+            }
             mp[rem]++;
     
         }
