@@ -20,3 +20,27 @@ public:
     return ans;
     }
 };
+/*class Solution {
+public:
+    int getDecimalValue(ListNode* head) {
+        int size = 0;
+        ListNode* temp = head;
+
+        while (temp != nullptr) {
+            size++;
+            temp = temp->next;
+        }
+
+        int ans = 0;
+        temp = head;
+
+        for (int i = size - 1; i >= 0; i--) {
+            if (temp->val == 1) {
+                ans += pow(2, i);
+            }
+            temp = temp->next;
+        }
+
+        return ans;
+    }
+};*/
